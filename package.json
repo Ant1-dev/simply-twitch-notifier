@@ -1,0 +1,29 @@
+{
+  "name": "twitch-notifier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:chrome": "webpack",
+    "build:firefox": "webpack --env firefox=true",
+    "build": "npm run build:chrome && npm run build:firefox",
+    "watch:chrome": "webpack --watch",
+    "watch:firefox": "webpack --watch --env firefox=true"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/webextension-polyfill": "^0.12.4",
+    "copy-webpack-plugin": "^13.0.1",
+    "ts-loader": "^9.5.4",
+    "typescript": "^5.9.3",
+    "webpack": "^5.104.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "dependencies": {
+    "webextension-polyfill": "^0.12.0"
+  }
+}

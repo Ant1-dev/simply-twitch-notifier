@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+h2 {
+  color: #555;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.description {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 14px;
+  resize: vertical;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #9147ff;
+}
+
+.setting-row {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+label {
+  color: #555;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+input[type="range"] {
+  flex: 1;
+  max-width: 200px;
+}
+
+#volumeDisplay {
+  min-width: 40px;
+  color: #666;
+  font-weight: 500;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.primary-button {
+  background-color: #9147ff;
+  color: white;
+}
+
+.primary-button:hover {
+  background-color: #7c3aed;
+}
+
+.secondary-button {
+  background-color: #e5e5e5;
+  color: #333;
+}
+
+.secondary-button:hover {
+  background-color: #d4d4d4;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.status {
+  color: #22c55e;
+  font-size: 14px;
+}
+
+.status.error {
+  color: #ef4444;
+}
